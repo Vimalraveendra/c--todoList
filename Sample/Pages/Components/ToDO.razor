@@ -1,0 +1,41 @@
+﻿@page "/todo"
+
+<h3>Todo</h3>
+@*Edit form*@
+
+<EditForm Model="task" class="form-inline" OnValidSubmit="AddTask">
+    <input type="text" class="form-control mx-2" @bind-value="task.TaskName"/>
+    <button class="btn btn-outline-primary mx-2">Add Item</button>
+</EditForm>
+
+<ul class="list-group my-2">
+    @foreach (var taskItem in taskList)
+    {
+        if (taskItem.IsCompleted)
+        {
+
+
+            @*task completed*@
+
+            <li class="list-group-item list-group-success mx-1"><del class="btn btn-outline-danger">@taskItem.TaskName</del>Delete</li>
+        }
+        else
+        {
+             @*task not completed   *@
+            <li class="list-group-item list-group-primary mx-1">@taskItem.TaskName</li>
+        }
+    }
+
+</ul>
+
+@code {
+    protected List<TaskModel> taskList = new List<TaskModel>();
+    protected TaskModel task = new TaskModel();
+
+    private void AddTask()
+    {
+        taskList.Add(task);
+         @* once enter the item clear the input field*@
+    task = new TaskModel();
+}
+}

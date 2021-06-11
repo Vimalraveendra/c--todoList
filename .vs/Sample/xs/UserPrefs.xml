@@ -1,0 +1,33 @@
+﻿<Properties StartupConfiguration="{1C4614A0-B78E-4002-9142-567D9C3EDFDE}|Default">
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Sample" expanded="True">
+            <Node name="Sample" expanded="True">
+              <Node name="Data" expanded="True">
+                <Node name="Models" expanded="True" />
+              </Node>
+              <Node name="Pages" expanded="True">
+                <Node name="Components" expanded="True">
+                  <Node name="ToDO.razor" selected="True" />
+                </Node>
+              </Node>
+              <Node name="Properties" expanded="True" />
+              <Node name="Shared" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Sample PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/vimalraveendran/Projects/Sample/Sample/Pages/Counter.razor" relfile="Sample/Pages/Counter.razor" line="10" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
