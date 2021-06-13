@@ -91,9 +91,11 @@ using Sample.Data.Models;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 31 "/Users/vimalraveendran/Projects/Sample/Sample/Pages/Components/ToDO.razor"
+#line 36 "/Users/vimalraveendran/Projects/Sample/Sample/Pages/Components/ToDO.razor"
        
+    // creating list item
     protected List<TaskModel> taskList = new List<TaskModel>();
+    // creating class object.
     protected TaskModel task = new TaskModel();
 
     private void AddTask()
@@ -105,10 +107,19 @@ using Sample.Data.Models;
 #line hidden
 #nullable disable
 #nullable restore
-#line 38 "/Users/vimalraveendran/Projects/Sample/Sample/Pages/Components/ToDO.razor"
+#line 45 "/Users/vimalraveendran/Projects/Sample/Sample/Pages/Components/ToDO.razor"
                                                        
-    task = new TaskModel();
+        task = new TaskModel();
 }
+
+     public int PercentageCompleted
+        {
+            get {
+             return taskList.Count>0? (taskList.Count(x=>x.IsCompleted)*100/taskList.Count):0;
+
+        }
+
+        }
 
 #line default
 #line hidden
